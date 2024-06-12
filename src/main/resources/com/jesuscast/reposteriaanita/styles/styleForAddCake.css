@@ -1,0 +1,66 @@
+
+.labels-titles {
+    -fx-font-family: "Montserrat ExtraBold";
+    -fx-font-size: 48px;
+    -fx-text-fill: #333333;
+}
+/* Estilos para los campos de entrada */
+.text-field {
+    -fx-background-color: #85D9F0;
+    -fx-border-color: black;
+}
+
+/* Estilos para las etiquetas de texto */
+
+
+/* Estilos para la animación de enfoque (focus) en los campos de entrada */
+.text-field:focused {
+    -fx-border-color: #48A7FA;
+    -fx-border-width: 2px;
+}
+
+/* Estilos para la animación de hover en los campos de entrada */
+.text-field:hover {
+    -fx-border-color: #48A7FA;
+    -fx-border-width: 1px;
+}
+
+#exitImage {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+#exitImage:hover {
+    -fx-effect: dropshadow(three-pass-box, red, 20, 0, 0, 0);
+}
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+.image-view:hover {
+    -fx-effect: dropshadow(three-pass-box, blue, 20, 0, 0, 0);
+}
+#imgCentral{
+    -fx-effect: dropshadow(three-pass-box, #91EEE9, 20, 0, 0, 0);
+}
+.editar-btn {
+    -fx-background-color: #3B92EB;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Montserrat Black";
+    -fx-font-style: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+.editar-btn:hover {
+    -fx-background-color: #43F318;
+    -fx-font-size: 16px;
+}
+
+.editar-btn:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+.decoration{
+    -fx-effect: dropshadow(three-pass-box, #18D8F3, 10, 0, 0, 0);
+}

@@ -1,0 +1,21 @@
+
+.label {
+    -fx-font-family: "Montserrat", sans-serif;
+    -fx-font-size: 24px;
+    -fx-text-fill: #333333;
+}
+
+
+#welcomePane {
+    -fx-background-color: #48A7FA;
+}
+
+/* Estilos para las imágenes */
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Sombra suave */
+}
+.image-view:hover {
+    -fx-effect: dropshadow(three-pass-box, #007bff, 20, 0, 0, 0);
+}
+
+

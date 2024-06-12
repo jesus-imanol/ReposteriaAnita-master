@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #FFE960;" stylesheets="@styles/styleForProducts.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.HomeUpdateProducts">
+   <children>
+      <Pane layoutX="-84.0" layoutY="-1.0" prefHeight="81.0" prefWidth="1287.0" style="-fx-background-color: #48A7FA;">
+         <children>
+            <Label layoutX="505.0" layoutY="14.0" prefHeight="53.0" prefWidth="350.0" text="Reposteria Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="641.0" layoutY="79.0" prefHeight="76.0" prefWidth="561.0" style="-fx-background-color: #3BF590;">
+         <children>
+            <Label layoutX="88.0" layoutY="12.0" prefHeight="53.0" prefWidth="421.0" text="Actualizar productos">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="pastelUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="345.0" layoutY="204.0" onMouseClicked="#onClickUpdatePastel" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/pastel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="postreFrutasUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="623.0" layoutY="204.0" onMouseClicked="#onClickUpdatePostreFrutas" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/postre-frutas.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gelatinaUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="909.0" layoutY="203.0" onMouseClicked="#onClickUpdateGelatina" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/gelatina.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="flanUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="348.0" layoutY="422.0" onMouseClicked="#onClickUpdateFlan" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/flan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cupcakeUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="637.0" layoutY="422.0" onMouseClicked="#onClickUpdateCupcake" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/cupcake.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carlotaUpdateImage" fitHeight="186.0" fitWidth="251.0" layoutX="919.0" layoutY="420.0" onMouseClicked="#onClickUpdateCarlota" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/actualizar/carlota.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="380.0" fitWidth="359.0" layoutX="-14.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/actualizado.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitBtn" layoutX="1038.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="61.0" prefWidth="149.0" text="Salir" />
+   </children>
+</AnchorPane>

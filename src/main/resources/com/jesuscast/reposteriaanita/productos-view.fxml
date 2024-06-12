@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@styles/styleForProducts.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #FFE960;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.ProductoController">
+   <children>
+      <Pane prefHeight="73.0" prefWidth="1283.0" style="-fx-background-color: #48A7FA;">
+         <children>
+            <Label layoutX="410.0" layoutY="9.0" prefHeight="53.0" prefWidth="350.0" text="Reposteria Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="addProductImage" fitHeight="331.0" fitWidth="331.0" layoutX="24.0" layoutY="228.0" onMouseClicked="#onClickAddProduct" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/productos/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="updateProductImage" fitHeight="325.0" fitWidth="299.0" layoutX="334.0" layoutY="231.0" onMouseClicked="#onClickUpdateProduct" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/productos/update.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="seeProductImage" fitHeight="317.0" fitWidth="315.0" layoutX="643.0" layoutY="234.0" onMouseClicked="#onClickSeeProduct" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/productos/see.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deleteProductImage" fitHeight="328.0" fitWidth="319.0" layoutX="955.0" layoutY="226.0" onMouseClicked="#onClickDeleteProduct" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/productos/delete.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="759.0" layoutY="73.0" prefHeight="79.0" prefWidth="524.0" style="-fx-background-color: #3BF590;">
+         <children>
+            <Label layoutX="88.0" layoutY="12.0" prefHeight="53.0" prefWidth="222.0" text="Productos">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="returnImage" fitHeight="82.0" fitWidth="100.0" layoutX="1165.0" layoutY="597.0" onMouseClicked="#onClickReturnHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/return.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="198.0" layoutX="110.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+         <image>
+            <Image url="@img/cafe.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

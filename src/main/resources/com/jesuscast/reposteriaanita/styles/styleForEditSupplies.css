@@ -1,0 +1,95 @@
+
+.titulos {
+    -fx-font-family: "Montserrat ExtraBold";
+    -fx-font-size: 48px;
+    -fx-text-fill: #333333;
+}
+.text-field {
+    -fx-background-color: #BBC9CC;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 48px;
+    -fx-pref-width: 421px;
+}
+.labels-input {
+    -fx-font-family: "Montserrat ExtraBold";
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+#welcomePane {
+    -fx-background-color: #48A7FA;
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+.image-view:hover {
+    -fx-effect: dropshadow(three-pass-box, red, 20, 0, 0, 0);
+}
+
+Button {
+    -fx-background-color: #3B92EB;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Montserrat Black";
+    -fx-font-style: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+Button:hover {
+    -fx-background-color: #FF5021;
+    -fx-font-size: 16px;
+}
+
+Button:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+.imgs-decoration {
+    -fx-effect: dropshadow(three-pass-box, blue, 10, 0, 0, 0);
+}
+/**/
+.editSupplies{
+    -fx-background-color: #3B92EB;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Montserrat Black";
+    -fx-font-style: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+.editSupplies:hover {
+    -fx-background-color: #17BD21;
+    -fx-font-size: 16px;
+}
+
+.editSupplies:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+#unitComboBox {
+    -fx-background-color: #E3DCDA;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 46px;
+    -fx-pref-width: 425px;
+}
+
+#unitComboBox .arrow-button {
+    -fx-background-color: #FFFFFF;
+}
+
+#unitComboBox .arrow-button .arrow {
+    -fx-background-color: #000000;
+}

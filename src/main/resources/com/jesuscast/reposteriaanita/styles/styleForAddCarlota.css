@@ -1,0 +1,45 @@
+.inputs-add {
+    -fx-background-color: #BBC9CC;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-pref-height: 48px;
+    -fx-pref-width: 421px;
+}
+#exitImage {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+#exitImage:hover {
+    -fx-effect: dropshadow(three-pass-box, red, 20, 0, 0, 0);
+}
+#addProductImage{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}
+#addProductImage:hover {
+    -fx-effect: dropshadow(three-pass-box, lawngreen, 20, 0, 0, 0);
+}
+.editar-btn {
+    -fx-background-color: #3B92EB;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Montserrat Black";
+    -fx-font-style: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+.editar-btn:hover {
+    -fx-background-color: #43F318;
+    -fx-font-size: 16px;
+}
+
+.editar-btn:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+.decoration{
+    -fx-effect: dropshadow(three-pass-box, #18D8F3, 10, 0, 0, 0);
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #6ED3EC;" stylesheets="@styles/styleForHomeClient.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.SuppliesController">
+   <children>
+      <Pane prefHeight="138.0" prefWidth="1280.0" style="-fx-background-color: #F8C471;">
+         <children>
+            <ImageView fitHeight="229.0" fitWidth="287.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="458.0" layoutY="30.0" text="Reposteria Anita">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="addInsumoImage" fitHeight="296.0" fitWidth="313.0" layoutX="75.0" layoutY="270.0" onMouseClicked="#onClickAddInsumo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insumos/agregar-insumos.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="742.0" layoutY="137.0" prefHeight="96.0" prefWidth="540.0" style="-fx-background-color: #12ABD1#42A67B;">
+         <children>
+            <Label layoutX="260.0" layoutY="22.0" text="Insumos">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="updateInsumoImage" fitHeight="296.0" fitWidth="313.0" layoutX="375.0" layoutY="271.0" onMouseClicked="#onClickUpdateInsumo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insumos/update-insumos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="seeInsumoImage" fitHeight="296.0" fitWidth="313.0" layoutX="676.0" layoutY="271.0" onMouseClicked="#OnClickSeeInsumo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insumos/ver-insumos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="deleteInsumoImage" fitHeight="296.0" fitWidth="313.0" layoutX="982.0" layoutY="272.0" onMouseClicked="#onClickDeleteInsumo" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/insumos/eliminar-insumos.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitBtn" layoutX="1112.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="61.0" prefWidth="150.0" text="Salir" />
+      <ImageView fitHeight="138.0" fitWidth="334.0" layoutX="472.0" layoutY="566.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/design.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

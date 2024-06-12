@@ -1,0 +1,58 @@
+Button {
+    -fx-background-color: #3B92EB;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Montserrat Black";
+    -fx-font-style: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+}
+
+Button:hover {
+    -fx-background-color: #72D955;
+    -fx-font-size: 16px;
+}
+
+Button:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+#container{
+    -fx-background-color: #ffffff;
+}
+
+.label {
+    -fx-font-family: "Montserrat", sans-serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+.table-view {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-view .column-header {
+    -fx-background-color: #eeeeee;
+    -fx-font-size: 10px;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-font-size: 12px;
+}
+#titleLabel {
+    -fx-font-family: "Montserrat ExtraBold";
+    -fx-font-size: 28px;
+    -fx-text-fill: #333333;
+}
+
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #4BDFD9;" stylesheets="@styles/styleForSeeSupplies.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.SeeSuppliesController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="69.0" prefWidth="1286.0" style="-fx-background-color: #F8C471;">
+         <children>
+            <Label fx:id="titleLabel" layoutX="500.0" layoutY="18.0" prefHeight="34.0" prefWidth="399.0" styleClass="labels-input" text="Reposteria Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="123.0" fitWidth="119.0" layoutX="140.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" styleClass="decoration">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tableSupplies" layoutX="346.0" layoutY="153.0" prefHeight="409.0" prefWidth="790.0" style="-fx-background-color: #12ABD1;">
+         <columns>
+            <TableColumn fx:id="idSuppliesColumn" prefWidth="76.0" text="Id" />
+            <TableColumn minWidth="0.0" prefWidth="25.0" />
+            <TableColumn fx:id="nameSuppliesColumn" prefWidth="278.0" text="Nombre" />
+            <TableColumn fx:id="amountSuppliesColumn" prefWidth="182.0" text="Cantidad" />
+            <TableColumn fx:id="unitSuppliesColumn" prefWidth="228.0" text="Medida" />
+         </columns>
+      </TableView>
+      <Button fx:id="exitBtn" layoutX="1147.0" layoutY="665.0" mnemonicParsing="false" onMouseClicked="#onClickExitBtn" text="Salir" />
+      <Pane layoutX="794.0" layoutY="69.0" prefHeight="58.0" prefWidth="488.0" style="-fx-background-color: #12ABD1;">
+         <children>
+            <Label fx:id="titleLabel1" layoutX="89.0" layoutY="12.0" prefHeight="34.0" prefWidth="259.0" styleClass="labels-input" text="Ver insumos">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="298.0" fitWidth="275.0" layoutX="14.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" styleClass="decoration">
+         <image>
+            <Image url="@img/insumos-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="84.0" layoutX="297.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/decoracion.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

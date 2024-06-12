@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="headerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #FFE960;" stylesheets="@styles/styleForMenuAddProducts.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.MenuProductsController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="79.0" prefWidth="1280.0" style="-fx-background-color: #FFD973;">
+         <children>
+            <Label layoutX="512.0" layoutY="19.0" prefHeight="53.0" prefWidth="360.0" text="Repostería Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="463.0" fitWidth="321.0" layoutX="-10.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+         <image>
+            <Image url="@img/panadera.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pastelImage" fitHeight="272.0" fitWidth="224.0" layoutX="323.0" layoutY="75.0" onMouseClicked="#onClickPastel" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/boton-add-pastel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carlotaImage" fitHeight="305.0" fitWidth="210.0" layoutX="587.0" layoutY="45.0" onMouseClicked="#onClickCarlota" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/boton-add-carlota.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gelatinaImage" fitHeight="270.0" fitWidth="204.0" layoutX="875.0" layoutY="70.0" onMouseClicked="#onClickGelatina" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/boton-add-gelatina.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cupcakeImage" fitHeight="267.0" fitWidth="211.0" layoutX="324.0" layoutY="401.0" onMouseClicked="#onClickCupcake" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/button-add-cupcake.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="flanImage" fitHeight="295.0" fitWidth="209.0" layoutX="588.0" layoutY="375.0" onMouseClicked="#onClickFlan" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/button-add-flan.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="postreFrutasImage" fitHeight="285.0" fitWidth="234.0" layoutX="873.0" layoutY="386.0" onMouseClicked="#onClickPostreFrutas" pickOnBounds="true" preserveRatio="true" styleClass="imgs-selector">
+         <image>
+            <Image url="@img/button-add-postreFrutas.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitBtn" layoutX="1118.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="43.0" prefWidth="148.0" text="Salir" />
+   </children>
+</AnchorPane>

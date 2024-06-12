@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #FFD973;" stylesheets="@styles/styleForEditCupcake.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.EditGelatinaController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="79.0" prefWidth="1201.0" style="-fx-background-color: #48A7FA;">
+         <children>
+            <Label layoutX="182.0" layoutY="13.0" prefHeight="53.0" prefWidth="360.0" text="Repostería Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="144.0" fitWidth="263.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="534.0" layoutY="77.0" prefHeight="60.0" prefWidth="671.0" style="-fx-background-color: #6E82F0;">
+         <children>
+            <Label layoutX="3.0" layoutY="4.0" prefHeight="53.0" prefWidth="376.0" text="Editar gelatina">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="amountInput" layoutX="39.0" layoutY="254.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <TextField fx:id="priceInput" layoutX="40.0" layoutY="338.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="40.0" layoutY="163.0" prefHeight="17.0" prefWidth="143.0" text="Nombre">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="238.0" prefHeight="17.0" prefWidth="143.0" text="Cantidad">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="323.0" prefHeight="17.0" prefWidth="143.0" text="Precio">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameInput" layoutX="38.0" layoutY="180.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <ImageView fx:id="exitImage" fitHeight="123.0" fitWidth="244.0" layoutX="963.0" layoutY="559.0" onMouseClicked="#onClickExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/salir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="246.0" fitWidth="337.0" layoutX="822.0" layoutY="294.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/gelatina.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="editNameBtn" layoutX="460.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#onClickEditName" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="increaseBtn" layoutX="463.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#onClickIncrease" prefHeight="32.0" prefWidth="196.0" styleClass="btns" text="Aumentar cantidad" />
+      <Button fx:id="priceEditBtn" layoutX="466.0" layoutY="339.0" mnemonicParsing="false" onMouseClicked="#onClickEditPrice" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="sizeEditBtn" layoutX="468.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onClickEditSize" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="typeEditBtn" layoutX="468.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#onClickEditType" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="decreaseBtn" layoutX="464.0" layoutY="269.0" mnemonicParsing="false" onMouseClicked="#onClickDecrease" prefHeight="32.0" prefWidth="196.0" styleClass="btns" text="Disminuir cantidad" />
+      <Label layoutX="43.0" layoutY="400.0" prefHeight="17.0" prefWidth="143.0" text="Tamaño">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="476.0" prefHeight="17.0" prefWidth="143.0" text="Tipo">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeComboBox" layoutX="42.0" layoutY="500.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <ComboBox fx:id="sizeComboBox" layoutX="40.0" layoutY="421.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <TextField fx:id="idSearchInput" layoutX="791.0" layoutY="188.0" prefHeight="40.0" prefWidth="378.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="793.0" layoutY="157.0" prefHeight="32.0" prefWidth="328.0" text="Ingrese los 3 primeros digitos de la ID para buscar la gelatina" />
+   </children>
+</AnchorPane>

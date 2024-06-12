@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #6ED3EC;" stylesheets="@styles/styleForAddSupplies.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.AddSuppliesController">
+   <children>
+      <Pane prefHeight="138.0" prefWidth="1280.0" style="-fx-background-color: #F8C471;">
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="158.0" layoutX="96.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="458.0" layoutY="30.0" styleClass="titulos" text="Reposteria Anita">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="273.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+               <image>
+                  <Image url="@img/decoracion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="742.0" layoutY="137.0" prefHeight="96.0" prefWidth="540.0" style="-fx-background-color: #12ABD1;">
+         <children>
+            <Label layoutX="124.0" layoutY="21.0" styleClass="titulos" text="Agregar insumos">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="exitBtn" layoutX="1112.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="61.0" prefWidth="150.0" text="Salir" />
+      <ComboBox fx:id="unitComboBox" layoutX="125.0" layoutY="443.0" prefHeight="46.0" prefWidth="348.0" promptText="Kilo" />
+      <TextField fx:id="nameInsumoInput" layoutX="126.0" layoutY="277.0" prefHeight="40.0" prefWidth="342.0" />
+      <Label layoutX="134.0" layoutY="255.0" styleClass="labels-input" text="Nombre del insumo" />
+      <TextField fx:id="amountInput" layoutX="126.0" layoutY="357.0" prefHeight="40.0" prefWidth="342.0" />
+      <Label layoutX="131.0" layoutY="337.0" styleClass="labels-input" text="Cantidad" />
+      <Label layoutX="132.0" layoutY="418.0" styleClass="labels-input" text="Medida" />
+      <Button fx:id="addSuppliesBtn" layoutX="941.0" layoutY="621.0" mnemonicParsing="false" onMouseClicked="#onClickAddSupplies" prefHeight="61.0" prefWidth="150.0" styleClass="addSuppliesBtn" text="Agregar insumo" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="334.0" fitWidth="430.0" layoutX="711.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+         <image>
+            <Image url="@img/ingredientes.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

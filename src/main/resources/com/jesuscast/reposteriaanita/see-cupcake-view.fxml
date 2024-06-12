@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" stylesheets="@styles/style.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.SeeCupcakeProduct">
+   <children>
+      <Pane layoutX="284.0" prefHeight="69.0" prefWidth="640.0">
+         <children>
+            <Label fx:id="titleLabel" layoutX="239.0" layoutY="9.0" text="Cupcake">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tableProduct" layoutX="28.0" layoutY="49.0" prefHeight="592.0" prefWidth="1219.0">
+         <columns>
+            <TableColumn fx:id="idProductColumn" prefWidth="76.0" text="Id" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" />
+            <TableColumn fx:id="nameProductColumn" prefWidth="256.0" text="Nombre" />
+            <TableColumn fx:id="amountProductColumn" prefWidth="152.0" text="Cantidad" />
+            <TableColumn fx:id="priceProductColumn" prefWidth="154.0" text="Precio" />
+            <TableColumn fx:id="stuffedProductColumn" prefWidth="249.0" text="Relleno" />
+            <TableColumn fx:id="designProductColumn" prefWidth="331.0" text="Diseño" />
+         </columns>
+      </TableView>
+      <Button fx:id="exitBtn" layoutX="1147.0" layoutY="665.0" mnemonicParsing="false" onMouseClicked="#onClickExitBtn" text="Salir" />
+   </children>
+</AnchorPane>

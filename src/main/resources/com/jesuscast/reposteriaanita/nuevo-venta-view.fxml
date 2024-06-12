@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #7D787D;" stylesheets="@styles/styleForHomeSales.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.TypesSaleOrderController">
+   <children>
+      <Pane prefHeight="69.0" prefWidth="653.0" style="-fx-background-color: #C0BCC0;">
+         <children>
+            <Label fx:id="titulo1" layoutX="170.0" layoutY="8.0" text="Reposteria Anita">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="exitBtn" layoutX="1036.0" layoutY="625.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="61.0" prefWidth="150.0" text="Salir" />
+      <Pane layoutY="69.0" prefHeight="69.0" prefWidth="529.0" style="-fx-background-color: #F4CEF4;">
+         <children>
+            <Label fx:id="titulo2" layoutX="30.0" layoutY="17.0" text="Agregar nuevo pedido">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="61.0" fitWidth="58.0" layoutX="409.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/venta.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="decorationImg" fitHeight="168.0" fitWidth="166.0" layoutX="892.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/compras.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ordersHomeImage" fitHeight="296.0" fitWidth="313.0" layoutX="300.0" layoutY="222.0" onMouseClicked="#onClickOrdersHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pedidos-domicilio.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orderInPremisesImage" fitHeight="296.0" fitWidth="313.0" layoutX="606.0" layoutY="223.0" onMouseClicked="#onClickOrdersInPremises" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pedidos-local.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

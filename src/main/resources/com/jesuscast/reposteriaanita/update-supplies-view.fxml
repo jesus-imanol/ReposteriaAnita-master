@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #6ED3EC;" stylesheets="@styles/styleForEditSupplies.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.UpdateSuppliesController">
+   <children>
+      <Pane prefHeight="138.0" prefWidth="1280.0" style="-fx-background-color: #F8C471;">
+         <children>
+            <ImageView fitHeight="154.0" fitWidth="158.0" layoutX="96.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="458.0" layoutY="30.0" styleClass="titulos" text="Reposteria Anita">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="273.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+               <image>
+                  <Image url="@img/decoracion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="742.0" layoutY="137.0" prefHeight="96.0" prefWidth="540.0" style="-fx-background-color: #12ABD1#42A67B;">
+         <children>
+            <Label layoutX="200.0" layoutY="22.0" styleClass="titulos" text="Editar insumo">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="exitBtn" layoutX="1112.0" layoutY="622.0" mnemonicParsing="false" onMouseClicked="#onClickExit" prefHeight="61.0" prefWidth="150.0" text="Salir" />
+      <ComboBox fx:id="unitComboBox" layoutX="126.0" layoutY="486.0" prefHeight="46.0" prefWidth="348.0" promptText="Kilo" />
+      <TextField fx:id="nameInsumoInput" layoutX="126.0" layoutY="320.0" prefHeight="40.0" prefWidth="342.0" />
+      <Label layoutX="134.0" layoutY="298.0" styleClass="labels-input" text="Nombre del insumo" />
+      <TextField fx:id="unitExtentInput" layoutX="126.0" layoutY="400.0" prefHeight="40.0" prefWidth="342.0" />
+      <Label layoutX="131.0" layoutY="380.0" styleClass="labels-input" text="Aumentar o disminuir cantidad" />
+      <Label layoutX="134.0" layoutY="460.0" styleClass="labels-input" text="Medida" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="733.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="217.0" fitWidth="218.0" layoutX="858.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="imgs-decoration">
+         <image>
+            <Image url="@img/insumo-edit.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="243.0" styleClass="labels-input" text="¿Qué deseas editar?" />
+      <TextField fx:id="idSearchSupplies" layoutX="756.0" layoutY="282.0" prefHeight="40.0" prefWidth="342.0" />
+      <Label layoutX="759.0" layoutY="257.0" styleClass="labels-input" text="Buscar por ID del producto para editar:" />
+      <Button fx:id="editNameBtn" layoutX="573.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#onClickEditName" styleClass="editSupplies" text="Editar" />
+      <Button fx:id="editUnitExtentBtn" layoutX="574.0" layoutY="409.0" mnemonicParsing="false" onMouseClicked="#onClickEditUnitExtent" styleClass="editSupplies" text="Editar" />
+      <Button fx:id="ediUnitComboBox" layoutX="573.0" layoutY="495.0" mnemonicParsing="false" onMouseClicked="#onClickEditUnit" styleClass="editSupplies" text="Editar" />
+   </children>
+</AnchorPane>

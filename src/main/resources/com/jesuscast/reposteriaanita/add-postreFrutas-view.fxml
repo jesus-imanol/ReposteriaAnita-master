@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #FFD973;" stylesheets="@styles/styleForAddCake.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.AddPostreFrutasController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="79.0" prefWidth="1203.0" style="-fx-background-color: #48A7FA;">
+         <children>
+            <Label layoutX="182.0" layoutY="13.0" prefHeight="53.0" prefWidth="360.0" text="Repostería Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="128.0" fitWidth="131.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/panadera.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="697.0" layoutY="78.0" prefHeight="60.0" prefWidth="503.0" style="-fx-background-color: #6E82F0;">
+         <children>
+            <Label layoutX="27.0" layoutY="4.0" prefHeight="53.0" prefWidth="491.0" text="Agregar postre de frutas">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fx:id="addProductImage" fitHeight="121.0" fitWidth="207.0" layoutX="674.0" layoutY="552.0" onMouseClicked="#onClickAddProduct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/boton-agregar-producto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="exitImage" fitHeight="141.0" fitWidth="207.0" layoutX="923.0" layoutY="546.0" onMouseClicked="#onClickExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/salir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="219.0" fitWidth="522.0" layoutX="613.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/postreFrutas.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="amountInput" layoutX="55.0" layoutY="330.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <TextField fx:id="priceInput" layoutX="54.0" layoutY="412.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="53.0" layoutY="229.0" prefHeight="17.0" prefWidth="143.0" text="Nombre">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="314.0" prefHeight="17.0" prefWidth="143.0" text="Cantidad">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="397.0" prefHeight="17.0" prefWidth="143.0" text="Precio">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameInput" layoutX="51.0" layoutY="246.0" prefHeight="40.0" prefWidth="412.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="60.0" layoutY="466.0" prefHeight="17.0" prefWidth="143.0" text="Tamaño">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sizeComboBox" layoutX="56.0" layoutY="486.0" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+   </children>
+</AnchorPane>

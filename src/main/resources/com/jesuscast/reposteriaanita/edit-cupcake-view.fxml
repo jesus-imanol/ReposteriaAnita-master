@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #FFD973;" stylesheets="@styles/styleForEditCupcake.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jesuscast.reposteriaanita.controllers.EditCupCakeController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="79.0" prefWidth="1200.0" style="-fx-background-color: #48A7FA;">
+         <children>
+            <Label layoutX="182.0" layoutY="13.0" prefHeight="53.0" prefWidth="360.0" text="Repostería Anita">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="637.0" layoutY="77.0" prefHeight="60.0" prefWidth="564.0" style="-fx-background-color: #6E82F0;">
+         <children>
+            <Label layoutX="3.0" layoutY="4.0" prefHeight="53.0" prefWidth="376.0" text="Editar cupcake">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="209.0" fitWidth="272.0" layoutX="700.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/magdalena.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="amountInput" layoutX="39.0" layoutY="245.0" prefHeight="40.0" prefWidth="379.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <TextField fx:id="priceInput" layoutX="40.0" layoutY="314.0" prefHeight="40.0" prefWidth="380.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="40.0" layoutY="164.0" prefHeight="17.0" prefWidth="143.0" text="Nombre">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="229.0" prefHeight="17.0" prefWidth="143.0" text="Cantidad">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="299.0" prefHeight="17.0" prefWidth="143.0" text="Precio">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameInput" layoutX="38.0" layoutY="181.0" prefHeight="40.0" prefWidth="378.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <TextField fx:id="stuffedInput" layoutX="40.0" layoutY="383.0" prefHeight="40.0" prefWidth="382.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="41.0" layoutY="364.0" prefHeight="17.0" prefWidth="143.0" text="Relleno">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="designInput" layoutX="40.0" layoutY="443.0" prefHeight="45.0" prefWidth="382.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="41.0" layoutY="424.0" prefHeight="17.0" prefWidth="143.0" text="Diseño">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="exitImage" fitHeight="133.0" fitWidth="262.0" layoutX="889.0" layoutY="549.0" onMouseClicked="#onClickExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/salir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="166.0" layoutX="881.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/magdalena.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="143.0" fitWidth="131.0" layoutX="47.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/panadera.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="editNameBtn" layoutX="436.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#onClickEditName" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="increaseBtn" layoutX="439.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#onClickIncrease" prefHeight="32.0" prefWidth="181.0" styleClass="btns" text="Aumentar cantidad" />
+      <Button fx:id="priceEditBtn" layoutX="445.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#onClickEditPrice" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="stuffedEditBtn" layoutX="447.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#onClickEditSuffed" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="designEditBtn" layoutX="447.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#onClickEditDesign" prefHeight="32.0" prefWidth="70.0" styleClass="btns" text="Editar" />
+      <Button fx:id="decreaseBtn" layoutX="440.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#onClickDecrease" prefHeight="32.0" prefWidth="181.0" styleClass="btns" text="Disminuir cantidad" />
+      <TextField fx:id="idSearchInput" layoutX="805.0" layoutY="189.0" prefHeight="40.0" prefWidth="378.0" style="-fx-background-color: #C9CCCD; -fx-border-color: black;" />
+      <Label layoutX="807.0" layoutY="158.0" prefHeight="32.0" prefWidth="328.0" text="Ingrese los 3 primeros digitos del Id para el cupcake" />
+   </children>
+</AnchorPane>
